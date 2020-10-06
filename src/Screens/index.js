@@ -1,11 +1,6 @@
-import React from 'react';
-import {NavigationContainer} from '@react-navigation/native'
+import Navigations from './Navigations';
+import Stack from './Stack';
 import Drawer from './Drawer';
 
-export default function AppStack(){
- return(
- <NavigationContainer>
-        <Drawer />
-    </NavigationContainer>
-    )
-};
+export default Navigations;
+export { Stack, Drawer };
