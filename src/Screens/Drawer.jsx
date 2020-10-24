@@ -1,20 +1,18 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
-import {createDrawerNavigator} from '@react-navigation/drawer'
-import Main from './Main';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 import Roasting from './Roasting';
-import CoffeBeans from './CoffeBeans';
+import CoffeeBeans from './CoffeeBeans';
+import Recipes from './Recipes';
 
 const DrawerNav = createDrawerNavigator();
 
 class Drawer extends Component {
-
   render() {
     return (
-      <DrawerNav.Navigator initialRouteName="Main">
-          <DrawerNav.Screen name="Main" component={Main}/>
-          <DrawerNav.Screen name="Roasting" component={Roasting}/>
-          <DrawerNav.Screen name="CoffeBeans" component={CoffeBeans}/>
+      <DrawerNav.Navigator>
+        <DrawerNav.Screen name="Roasting" component={Roasting} />
+        <DrawerNav.Screen name="CoffeeBeans" component={CoffeeBeans} />
+        <DrawerNav.Screen name="Recipes" component={Recipes} />
       </DrawerNav.Navigator>
     );
   }

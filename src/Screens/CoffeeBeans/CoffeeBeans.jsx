@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 
-class CoffeBeans extends Component {
- 
+class CoffeeBeans extends Component {
+
 
   render() {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text> CoffeBeans </Text>
+        <Text> CoffeeBeans </Text>
       </View>
     );
   }
 }
 
-export default CoffeBeans;
+export default CoffeeBeans;
