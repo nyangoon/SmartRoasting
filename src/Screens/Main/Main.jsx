@@ -36,7 +36,8 @@ const style = StyleSheet.create({
     backgroundColor: "#ffffff",
     width: "100%",
     justifyContent: "center",
-    marginBottom: "5%"
+    marginBottom: "5%",
+    borderRadius: 10
 
   },
   Buttons: {
@@ -44,7 +45,9 @@ const style = StyleSheet.create({
     justifyContent: "center",
     width: "100%",
     marginVertical: "5%",
-    backgroundColor: "skyblue"
+    backgroundColor: "skyblue",
+    borderRadius: 10
+
 
   },
   ButtonFont: {
