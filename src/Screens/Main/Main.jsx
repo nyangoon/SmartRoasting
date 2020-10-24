@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { View, Button } from 'react-native';
-import { CoffeeBeansButton, RecipesButton, RoastingButton } from './Components';
+import { StyleSheet, View } from 'react-native';
+import { CoffeeBeansButton, RecipesButton, RoastingButton, RoastingInformationButton } from './Components';
 
-class Main extends Component {
+export default class Main extends Component {
   constructor(props) {
     super(props);
   }
@@ -10,18 +10,45 @@ class Main extends Component {
   render() {
     return (
       <View
-        style={{
-          flex: 1,
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
+        style={style.container}
       >
-        <RoastingButton />
-        <CoffeeBeansButton />
-        <RecipesButton />
+        <RoastingButton style={style} />
+        <CoffeeBeansButton style={style} />
+        <RoastingInformationButton style={style} />
+        <RecipesButton style={style} />
       </View>
     );
   }
 }
 
-export default Main;
+const style = StyleSheet.create({
+  container: {
+    display: "flex",
+    flex: 1,
+    backgroundColor: "#BF926E",
+    alignItems: "center",
+    justifyContent: "center",
+    alignContent: "stretch",
+    padding: "18%"
+  },
+  RoastingButton: {
+    flex: 2,
+    backgroundColor: "#ffffff",
+    width: "100%",
+    justifyContent: "center",
+    marginBottom: "10%"
+
+  },
+  Buttons: {
+    flex: 1,
+    justifyContent: "center",
+    width: "100%",
+    marginBottom: "10%",
+    backgroundColor: "skyblue"
+
+  },
+  ButtonFont: {
+    alignSelf: "center",
+    fontSize: 20
+  }
+})

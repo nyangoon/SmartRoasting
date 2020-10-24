@@ -4,6 +4,7 @@ import Main from './Main';
 import CoffeeBeans from './CoffeeBeans';
 import Roasting from './Roasting';
 import Recipes from './Recipes';
+import RoastingInformation from './RoastingInformation';
 
 const StackNav = createStackNavigator();
 
@@ -15,6 +16,7 @@ class Stack extends Component {
         <StackNav.Screen name="Roasting" component={Roasting} />
         <StackNav.Screen name="CoffeeBeans" component={CoffeeBeans} />
         <StackNav.Screen name="Recipes" component={Recipes} />
+        <StackNav.Screen name="RoastingInformation" component={RoastingInformation} />
       </StackNav.Navigator>
     );
   }

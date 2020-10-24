@@ -1,13 +1,19 @@
 import React from 'react';
-import { Button } from 'react-native';
+import { Text, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
-export default function RoastingButton() {
+export default function RoastingButton(props) {
 
     const navigation = useNavigation();
+    const { style } = props
     return (
 
-        <Button title="로스팅" onPress={() => navigation.push("Roasting")} />
+        <TouchableOpacity style={style.RoastingButton} onPress={() => navigation.push("Roasting")}>
+            <Text style={style.ButtonFont}>
+                로스팅 확인
+            </Text>
+
+        </TouchableOpacity>
 
     )
 
