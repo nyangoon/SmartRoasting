@@ -5,9 +5,9 @@ import { FlipButton, SnapButton } from '.';
 
 export default function ButtonContainer(props) {
 
-    const { Camera, type, setType } = props;
+    const { Camera, type, setType, snapHandle } = props;
 
-    const FlipHandle = () => {
+    const flipHandle = () => {
         setType(
             type === Camera.Constants.Type.back
                 ? Camera.Constants.Type.front
@@ -15,15 +15,11 @@ export default function ButtonContainer(props) {
         );
     }
 
-    const SnapHandle = () => {
-
-    }
-
     return (
 
         <View style={style.buttonContainer}>
-            <FlipButton style={style} onPress={FlipHandle} />
-            <SnapButton style={style} onPress={SnapHandle} />
+            <FlipButton style={style} onPress={flipHandle} />
+            <SnapButton style={style} onPress={snapHandle} />
             <View style={style.view} />
         </View>
 
