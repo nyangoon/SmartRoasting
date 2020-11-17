@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Platform, View } from 'react-native';
+import { Button, Image, Platform, View } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
 import Constants from 'expo-constants';
 
@@ -21,7 +21,7 @@ export default function AccessAlbumScreen() {
         let result = await ImagePicker.launchImageLibraryAsync({
             mediaTypes: ImagePicker.MediaTypeOptions.All,
             allowsEditing: true,
-            aspect: [4, 3],
+            // aspect: [4, 3],
             quality: 1,
         });
 

@@ -8,7 +8,7 @@ export default function TakePictureScreen(props) {
     return (
 
         <View style={{ flex: 1 }}>
-            <Image source={{ uri: `data:image/jpeg;base64,${picture.base64}` }} style={style.takedPicture} resizeMode="cover" />
+            <Image source={{ uri: `data:image/jpeg;base64.${picture.base64}` }} style={style.takedPicture} resizeMode="cover" />
         </View>
 
     )
