@@ -36,15 +36,18 @@ const style = StyleSheet.create({
     backgroundColor: "#ffffff",
     width: "100%",
     justifyContent: "center",
-    marginBottom: "10%"
+    marginBottom: "5%",
+    borderRadius: 10
 
   },
   Buttons: {
     flex: 1,
     justifyContent: "center",
     width: "100%",
-    marginBottom: "10%",
-    backgroundColor: "skyblue"
+    marginVertical: "5%",
+    backgroundColor: "skyblue",
+    borderRadius: 10
+
 
   },
   ButtonFont: {
