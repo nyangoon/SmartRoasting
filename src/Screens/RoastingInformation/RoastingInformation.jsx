@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
+import Menu from './Components/Menu';
 
 class RoastingInformation extends Component {
 
 
     render() {
         return (
-            <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-                <Text> RoastingInformation </Text>
-            </View>
+            <Menu/>
         );
     }
 }

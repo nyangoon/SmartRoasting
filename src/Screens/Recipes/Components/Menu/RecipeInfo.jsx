@@ -9,7 +9,7 @@ export default function CoffeInfo (props){
     const navigation = useNavigation();
 
     const onPressHandle = () =>{
-        navigation.push("CoffeeBeansInfo", {name:{name}});
+        navigation.push("RecipesInfo", {name:{name}});
     }
     
     return(

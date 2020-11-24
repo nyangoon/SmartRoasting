@@ -8,6 +8,8 @@ import RoastingInformation from './RoastingInformation';
 import Camera from './Roasting/Components/Camera';
 import AccessAlbumScreen from './Roasting/Components/Album';
 import CoffeeBeansInformation from './CoffeeBeans/Components/Information';
+import RoastingInfoInformation from './RoastingInformation/Components/Information';
+import RecipesInformation from './Recipes/Components/Information';
 
 const StackNav = createStackNavigator();
 
@@ -23,6 +25,8 @@ class Stack extends Component {
         <StackNav.Screen name="Camera" component={Camera} />
         <StackNav.Screen name="Album" component={AccessAlbumScreen} />
         <StackNav.Screen name="CoffeeBeansInfo" component={CoffeeBeansInformation}/>
+        <StackNav.Screen name="RoastingInfoInfo" component={RoastingInfoInformation}/>
+        <StackNav.Screen name="RecipesInfo" component={RecipesInformation}/>
       </StackNav.Navigator>
     );
   }

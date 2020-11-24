@@ -4,13 +4,13 @@ import React from 'react';
 import {ScrollView, StyleSheet, Text, View} from 'react-native'
 
 
-export default function CoffeBeansInformation (){
+export default function RecipesInfoInformation (){
     
     const{name, info} = useRoute().params
     return(
         <ScrollView style={style.container}>
                 <View style={style.name}>
-                    <Text style={style.headerText}>이름</Text>
+                    <Text style={style.headerText}>레시피</Text>
                 </View>
             <View style={style.header}>
                     <Text style={style.headerText}>Information</Text>
