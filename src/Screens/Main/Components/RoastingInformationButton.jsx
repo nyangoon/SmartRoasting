@@ -10,7 +10,7 @@ export default function RoastingInformationButton(props) {
 
         <TouchableOpacity
             style={style.Buttons}
-            onPress={() => navigation.push("RostingInformation")} >
+            onPress={() => navigation.push("RoastingInformation")} >
             <Text style={style.ButtonFont}>로스팅 정보</Text>
         </TouchableOpacity>
 

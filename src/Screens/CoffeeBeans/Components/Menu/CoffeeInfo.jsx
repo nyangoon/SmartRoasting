@@ -1,14 +1,22 @@
 import React from 'react';
-
 import {Image, StyleSheet, Text, TouchableOpacity} from 'react-native'
+import {useNavigation} from '@react-navigation/native'
 
-export default function CoffeInfo (){
 
+
+export default function CoffeInfo (props){
+    const {name, coffee, info} = props
+    const navigation = useNavigation();
+
+    const onPressHandle = () =>{
+        navigation.push("CoffeeBeansInfo", {name:{name}});
+    }
+    
     return(
-        <TouchableOpacity style={style.container}>
+        <TouchableOpacity style={style.container} onPress={onPressHandle}>
             <Image source={require("../../../../../assets/images/CoffeeBean_sample.jpg")} 
             style={style.image}/>
-            <Text style={style.name}>자메이카 블루마운틴</Text>
+            <Text style={style.name}>{name}</Text>
         </TouchableOpacity>
 
     )
