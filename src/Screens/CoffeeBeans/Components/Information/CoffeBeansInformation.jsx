@@ -10,14 +10,14 @@ export default function CoffeBeansInformation (){
     return(
         <ScrollView style={style.container}>
                 <View style={style.name}>
-                    <Text style={style.headerText}>이름</Text>
+                    <Text style={style.headerText}>{name}</Text>
                 </View>
             <View style={style.header}>
                     <Text style={style.headerText}>Information</Text>
                 </View>
             <View style={style.row}>
                 <View style={style.normal}>
-                    <Text style={style.normarText}>Information Sample Text</Text>
+                    <Text style={style.normarText}>{info}</Text>
                 </View>
             </View>
             <View style={style.header}>
